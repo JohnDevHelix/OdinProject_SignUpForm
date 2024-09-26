@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Odin Project - Forms</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+  </head>
+  
+  <body>
+    <div class="main-container">
+      <div class="logo-container">
+        <div class="logo-box">
+        <div class="logo">
+          <img src="odin-lined.png" alt="odin project logo">
+        </div>
+        <div class="logo-name">
+          <h1>ODIN</h1>
+        </div>
+        </div>
+      </div>
+
+      <div class="form-container">
+        <div class="form-desc">
+          <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+          <p>Sign up <em>now</em> to get started.</p>
+          <br />
+          <p>You <em>know</em> you want to.</p>
+        </div>
+          
+        <div class="form-list">
+          <div class="form-title">
+            <h2>Let's do this!</h2>
+          </div>
+          
+        <form action="dummy.php" method="post" class="form">
+          <div class="form-fields">
+          <div class="left-form">
+            <div class="first-name">
+              <label for="firstname">FIRST NAME</label>
+              <br />
+              <input type="text" id="firstname" name="firstname" class="firstname" required>
+            </div>
+                  
+            <div class="email">
+              <label for="email">EMAIL</label>
+              <br />
+              <input type="email" id="email" name="email" class="email" required>
+            </div>
+                  
+            <div class="password">
+              <label for="password">PASSWORD</label>
+              <br />
+              <input type="password" id="password" name="password" class="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,10}$" title="Invalid format. Must have atleast 1 uppercase, 1 lowercase, 1 number and 1 special character. Minimum of 8 and maximum of 10 characters only." required>
+            </div>
+          </div>
+
+          <div class="right-form">
+            <div class="last-name">
+              <label for="last-name">LAST NAME</label>
+              <br />
+              <input type="text" id="last-name" name="last-name" class="last-name" required>
+            </div>
+
+            <div class="number">
+              <label for="phone-number">PHONE NUMBER</label>
+              <br />
+              <input type="text" id="phone-number" name="phone-number" minlength="11" maxlength="11" class="phone-number" required>
+            </div>
+
+            <div class="confirm-password">
+              <label for="confirm-password">CONFIRM PASSWORD</label>
+              <br />
+              <input type="password" id="confirm-password" name="confirm-password" class="confirm-password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,10}$" title="Invalid format. Must have atleast 1 uppercase, 1 lowercase, 1 number and 1 special character. Minimum of 8 and maximum of 10 characters only." required>
+            </div>
+          </div>
+          </div>
+          </div>
+
+          <div class="submit">
+            <button>Create Account</button>
+          </div>
+
+          <div class="login">
+            <p>Already have an account? <a href="login.com">Log In</a></p>
+          </div>
+        </form>
+          
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
